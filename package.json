@@ -1,0 +1,14 @@
+{
+  "name": "chemistry",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A 21-day guided path through first-semester chemistry, with unlimited practice problems.",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "SUBJECTS=chemistry node server/index.js",
+    "dev": "SUBJECTS=chemistry node --watch server/index.js"
+  }
+}
