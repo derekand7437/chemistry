@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
   <link rel="stylesheet" href="css/chem.css">
   <link rel="stylesheet" href="css/base.css">
+  <script>
+    /* Paint saved appearance settings before the first frame, so there is no flash of the
+       default theme. prefs.js recomputes this map whenever the settings change. */
+    try {
+      var p = JSON.parse(localStorage.getItem("studyapp.prefs") || "{}");
+      var s = document.documentElement.style;
+      if (p.css) for (var k in p.css) s.setProperty(k, p.css[k]);
+      if (p.size && p.size !== 100) s.setProperty("zoom", String(p.size / 100));
+    } catch (e) {}
+  </script>
 </head>
 <body>
 <div class="topbar">
